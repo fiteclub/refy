@@ -1,0 +1,54 @@
+\e[0;91mrails root\n
+├──╴app
+│   ├──╴apis
+│   ├──╴controllers
+│   │   └──╴application.rb
+│   ├──╴helpers
+│   │   └──╴application_helper.rb
+│   ├──╴models
+│   └──╴views
+│       └──╴layouts
+├──╴components
+├──╴config
+│   ├──╴environments
+│   │   ├──╴development.rb
+│   │   ├──╴production.rb
+│   │   └──╴test.rb
+│   ├──╴database.yml
+│   ├──╴environment.rb
+│   └──╴routes.rb
+├──╴db
+├──╴doc
+│   └──╴lib
+├──╴log
+│   ├──╴development.log
+│   ├──╴production.log
+│   ├──╴server.log
+│   └──╴test.log
+├──╴public
+│   ├──╴images
+│   ├──╴javascripts
+│   │   ├──╴controls.js
+│   │   ├──╴dragdrop.js
+│   │   ├──╴effects.js
+│   │   └──╴prototype.js
+│   ├──╴stylesheets
+│   ├──╴.htaccess
+│   ├──╴404.html
+│   ├──╴500.html
+│   ├──╴dispatch.cgi
+│   ├──╴dispatch.fcgi
+│   ├──╴dispatch.rb
+│   ├──╴favicon.ico
+│   └──╴index.html
+├──╴script
+├──╴test
+│   ├──╴fixtures
+│   ├──╴functional
+│   ├──╴mocks
+│   │   ├──╴development
+│   │   └──╴test
+│   ├──╴unit
+│   ├──╴test_helper.rb
+├──╴vendor
+\e[0m 
