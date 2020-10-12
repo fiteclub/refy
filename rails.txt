@@ -1,54 +1,60 @@
-\e[0;91mrails root\n
-├──╴app
-│   ├──╴apis
-│   ├──╴controllers
-│   │   └──╴application.rb
-│   ├──╴helpers
-│   │   └──╴application_helper.rb
-│   ├──╴models
-│   └──╴views
-│       └──╴layouts
-├──╴components
-├──╴config
-│   ├──╴environments
-│   │   ├──╴development.rb
-│   │   ├──╴production.rb
-│   │   └──╴test.rb
-│   ├──╴database.yml
-│   ├──╴environment.rb
-│   └──╴routes.rb
-├──╴db
-├──╴doc
-│   └──╴lib
-├──╴log
-│   ├──╴development.log
-│   ├──╴production.log
-│   ├──╴server.log
-│   └──╴test.log
-├──╴public
-│   ├──╴images
-│   ├──╴javascripts
-│   │   ├──╴controls.js
-│   │   ├──╴dragdrop.js
-│   │   ├──╴effects.js
-│   │   └──╴prototype.js
-│   ├──╴stylesheets
-│   ├──╴.htaccess
-│   ├──╴404.html
-│   ├──╴500.html
-│   ├──╴dispatch.cgi
-│   ├──╴dispatch.fcgi
-│   ├──╴dispatch.rb
-│   ├──╴favicon.ico
-│   └──╴index.html
-├──╴script
-├──╴test
-│   ├──╴fixtures
-│   ├──╴functional
-│   ├──╴mocks
-│   │   ├──╴development
-│   │   └──╴test
-│   ├──╴unit
-│   ├──╴test_helper.rb
-├──╴vendor
-\e[0m 
+.
+├── APP/
+│   ├── ASSETS/
+│   │   ├── CONFIG/
+│   │   ├── IMAGES/
+│   │   └── STYLESHEETS/
+│   │       ├── application.css
+│   │       └── static_pages.scss
+│   ├── CHANNELS/
+│   │   └── APPLICATION_CABLE/
+│   │       ├── channel.rb
+│   │       └── connection.rb
+│   ├── CONTROLLERS/
+│   │   ├── CONCERNS/
+│   │   ├── application_controller.rb
+│   │   └── static_pages_controller.rb
+│   ├── HELPERS/
+│   │   ├── application_helper.rb
+│   │   └── static_pages_helper.rb
+│   ├── JAVASCRIPT/
+│   ├── JOBS/
+│   ├── MAILERS/
+│   ├── MODELS/
+│   │   ├── CONCERNS/
+│   │   └── application_record.rb
+│   └── VIEWS/
+│       ├── LAYOUTS/
+│       │   ├── _shim.html.erb
+│       │   ├── application.html.erb
+│       └── STATIC_PAGES/
+│           └── home.html.erb
+├── BIN/
+├── CONFIG/
+│   ├── ENVIRONMENTS/
+│   │   ├── development.rb
+│   │   ├── production.rb
+│   │   └── test.rb
+│   ├── database.yml
+│   ├── environment.rb
+│   └── routes.rb
+├── DB/
+├── LIB/
+├── LOG/
+├── PUBLIC/
+├── STORAGE/
+├── TEST/
+│   ├── CHANNELS/
+│   ├── CONTROLLERS/
+│   │   └── static_pages_controller_test.rb
+│   ├── FIXTURES/
+│   ├── HELPERS/
+│   │   └── application_helper_test.rb
+│   ├── INTEGRATION/
+│   │   └── site_layout_test.rb
+│   ├── MAILERS/
+│   ├── MODELS/
+│   ├── SYSTEM/
+│   ├── application_system_test_case.rb
+│   └── test_helper.rb
+└── TEST/

@@ -1,0 +1,59 @@
+## use "echo $(cat rails.txt)" to display with color\n
+\n
+\n
+\n
+\n
+rails root/\n
+├─app/\n
+│　├─apis/\n
+│　├─controllers/\n
+│　│　└─╴application.rb\n
+│　├─helpers/\n
+│　│　└─╴application_helper.rb\n
+│　├─models/\n
+│　└─views/\n
+│　 　└─layouts/\n
+├─components/\n
+├─config/\n
+│　├─environments/\n
+│　│　├─╴development.rb\n
+│　│　├─╴production.rb\n
+│　│　└─╴test.rb\n
+│　├─╴database.yml\n
+│　├─╴environment.rb\n
+│　└─╴routes.rb\n
+├─db/\n
+├─doc/\n
+│　└─lib/\n
+├─log/\n
+│　├─╴development.log\n
+│　├─╴production.log\n
+│　├─╴server.log\n
+│　└─╴test.log\n
+├─public/\n
+│　├─images/\n
+│　├─javascripts/\n
+│　│　├─╴controls.js\n
+│　│　├─╴dragdrop.js\n
+│　│　├─╴effects.js\n
+│　│　└─╴prototype.js\n
+│　├─stylesheets/\n
+│　├─╴.htaccess\n
+│　├─╴404.html\n
+│　├─╴500.html\n
+│　├─╴dispatch.cgi\n
+│　├─╴dispatch.fcgi\n
+│　├─╴dispatch.rb\n
+│　├─╴favicon.ico\n
+│　└─╴index.html\n
+├─script/\n
+├─test/\n
+│　├─fixtures/\n
+│　├─functional/\n
+│　├─mocks/\n
+│　│　├─development/\n
+│　│　└─test\n
+│　├─unit/\n
+│　└─╴test_helper.rb\n
+└─vendor/\n
+ 
