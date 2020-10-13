@@ -11,7 +11,7 @@ Quick reference key shortcuts from command line.
 Add to .bashrc or .zshrc :
 ```
 ##Refy
-alias ref=". [PATH/TO/REFY/ref.sh"
+alias ref=". [PATH/TO/REFY]/ref.sh"
 alias refr="ref --rails"
 alias refv="ref --vim"
 alias refc="ref --vscode"
