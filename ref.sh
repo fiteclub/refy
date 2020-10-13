@@ -4,6 +4,10 @@ txt_path="$(dirname "$0")/txt"
 
 case "$1" in 
 
+  -p | p | --pry | -pry | pry )
+    ccat --bg=dark $txt_path/pry.txt
+    ;;
+
   -r | r | --rails | -rails | rails )
     ccat --bg=dark $txt_path/rails.txt
     ;;
@@ -16,8 +20,19 @@ case "$1" in
     ccat --bg=dark $txt_path/vscode.txt
     ;;
 
+  ## Easter Eggs
+  kitteh )
+    sed -n 4,31p $txt_path/wtflol.txt 
+    ;;
+
+  doh )
+    sed -n 35,96p $txt_path/wtflol.txt 
+    ;;
+
+  ##
+
   *)
     echo " Usage: ref [options]"
-    echo "  -r, --rails, -v, --vii, -c, --code, --vscode"
+    echo "  -p, --pry, -r, --rails, -v, --vii, -c, --code, --vscode"
     ;;
 esac
