@@ -1,6 +1,6 @@
 #!/bin/bash
 
-txt_path="txt"
+txt_path="$(realpath .)/txt"
 
 case "$1" in 
 
