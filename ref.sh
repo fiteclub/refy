@@ -1,17 +1,19 @@
 #!/bin/bash
 
+txt_path="txt"
+
 case "$1" in 
 
   -r | r | --rails | -rails | rails )
-    ccat --bg=dark ~/repos/ref_sheet/rails.txt
+    ccat --bg=dark $txt_path/rails.txt
     ;;
 
   -v | v | --vi | -vi | vi | --vii | -vii | vii | --vim | -vim | vim )
-    ccat --bg=dark ~/repos/ref_sheet/vi.txt
+    ccat --bg=dark $txt_path/vi.txt
     ;;
 
   -c | c | --code | -code | code | --vscode | -vscode | vscode | --vsc | -vsc | vsc )
-    ccat --bg=dark ~/repos/ref_sheet/vscode.txt
+    ccat --bg=dark $txt_path/vscode.txt
     ;;
 
   *)
