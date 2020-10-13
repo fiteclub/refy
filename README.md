@@ -1,5 +1,5 @@
 ## refy
-
+Quick reference key shortcuts from command line.
 
 ### What does it do?
 - Prints .txt files to the command line. 
