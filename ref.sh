@@ -2,28 +2,33 @@
 
 txt_path="$(dirname "$0")/txt"
 
+show_me(){
+  type=$1
+  ccat --bg=dark $txt_path/$type.txt
+}
+
 case "$1" in 
 
   -p | p | --pry | -pry | pry )
-    type=pry
+    show_me pry
     ;;
 
   -r | r | --rails | -rails | rails )
-    type=rails
+    show_me rails
     ;;
 
   -v | v | --vi | -vi | vi | --vii | -vii | vii | --vim | -vim | vim )
-    type=vim
+    show_me vi
     ;;
 
   -c | c | --code | -code | code | --vscode | -vscode | vscode | --vsc | -vsc | vsc )
-    type=vscode
+    show_me vscode
     ;;
 
   ## Easter Eggs
 
   doh )
-    type=wtflol
+    show_me wtflol
     ;;
 
   ##
@@ -33,5 +38,3 @@ case "$1" in
     echo "  -p, --pry, -r, --rails, -v, --vii, -c, --code, --vscode"
     ;;
 esac
-
-ccat --bg=dark $txt_path/$type.txt
