@@ -2,7 +2,7 @@
 require 'coderay'
 
 def fetch_options
-  Dir["#{__dir__}/txt/*.txt"].map do |str| 
+  Dir["#{__dir__}/txt/*.txt"].map do |str|
     File.basename(str, File.extname(str))
   end
 end
@@ -24,7 +24,7 @@ def system_out(passed_arg)
     print_ref(passed_arg)
   else
     puts color("Usage: refy [shortcut list]\nPossible shortcut lists:")
-    options.each { |option| puts (" " * 4 + color(option)) }
+    options.each { |option| puts ' ' * 4 + color(option) }
   end
 end
 
