@@ -1,0 +1,47 @@
+Adding a brand new project
+  'git init'
+  'git add -A'
+  'git commit -m "Initialize Repository" '
+
+Add GitHub as a remote origin and push to GitHub
+  'git remote add origin git@github...my_project.git'
+  'git push -u origin master'
+
+Clone a repo
+  'git clone git@github...another_repo.git'
+
+Fork a repo -- click 'Fork' on github, then clone locally
+
+Switch a cloned repo to your fork (changed their code, now want to make it a fork)
+  <fork their repo on Github>
+  'git remote rename origin upstream'
+  'git remote add origin git@github...my-fork'
+  'git remote -vv'
+
+Update your fork
+  'git checkout master'
+  'git fetch upstream'
+  'git merge'
+
+Stashing https://git-scm.com/docs/git-stash
+  Stash & revert        'git stash'
+  List stashes          'git stash list'
+  Apply stash changes   'git stash pop'
+
+Branches
+  Show branches         'git branch'
+  New branch            'git checkout -b <branch-name>'
+  Switch branch         'git checkout <branch-name>'
+
+Status of local repo
+  Show local status     'git status'
+  Show remote source(s) 'git remote'
+
+Save progress, record changes  
+  Add new files         'git add -A'
+  Commit changes        'git commit -m "Message"'
+  Amend commit msg      'git commit --amend'
+  Push changes          'git push'
+
+ADD, COMMIT, PUSH before you go!
+  

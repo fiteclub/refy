@@ -1,13 +1,17 @@
 YouTube Music Desktop App
+
 Playback
   Cmd+Shift+Space     Play/Pause
   Cmd+Shift+PageUp    Next
   Cmd+Shift+PageDown  Previous
+
 Rating
   Cmd+Shift+L         Thumbs Up 
   Cmd+Shift+D         Thumbs Down
+
 Volume
   Cmd+Shift+Up        Increase Volume
   Cmd+Shift+Down      Decrease Volume
+
 Miniplayer
   Cmd+Shift+M         Open/Close Miniplayer
