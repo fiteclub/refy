@@ -1,12 +1,13 @@
 #!/usr/bin/env ruby
 require 'yaml'
+require 'coderay'
 
 def print_ref (name)
-  file = "txt/#{name}.txt"
+  file = "#{__dir__}/txt/#{name}.txt"
   ref_data = open file
 
   ref_data.each do |line|
-    print line
+    print CodeRay.scan(line, :ruby).terminal
   end
 
   ref_data.close
