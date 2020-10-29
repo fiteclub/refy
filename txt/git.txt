@@ -44,4 +44,8 @@ Save progress, record changes
   Push changes          'git push'
 
 ADD, COMMIT, PUSH before you go!
+
+Undo / Revert to last commit !LOSE ALL CHANGES!
+  'git reset HEAD --hard'
+  'git clean -fd'
   
