@@ -13,6 +13,9 @@ So that it looks something like:
 ```export PATH=$PWD:/Users/username/refy:$PATH```
 
 ### To Do
+- [ ] Move refy command line executable to bin/
+- [ ] Move remaining code to lib/
+- [ ] Redirect directory dependencies
 - [ ] Fix colorization with custom token encoder
 - [ ] Standardize syntax for keys ⌘,⌥, ⇧, etc
 - [ ] Refactor and standardize existing shortcut files
