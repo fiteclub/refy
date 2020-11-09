@@ -1,6 +1,7 @@
 require 'pry'
 require 'rainbow'  #https://github.com/sickill/rainbow
 require 'terminal-table'  #https://github.com/tj/terminal-table
+require 'tty-table' #https://github.com/piotrmurach/tty-table
 
 file = 'TEST.txt'
 raw_string_array = open(file).to_a
