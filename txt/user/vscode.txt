@@ -1,0 +1,3 @@
+ ⌘Esc    Toggle Vim Mode
+ ⌃⌘B     Toggle Activity Bar
+ ⌃⇧K     Toggle Render Whitespace

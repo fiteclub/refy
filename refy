@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 require 'coderay'
 
-def fetch_options
-  Dir["#{__dir__}/txt/*.txt"].map do |str|
+def fetch_options(directory)
+  Dir["#{__dir__}/#{directory}/*.txt"].map do |str|
     File.basename(str, File.extname(str))
   end
 end
@@ -11,17 +11,26 @@ def color(string)
   CodeRay.scan(string, :ruby).terminal
 end
 
-def print_ref(name)
-  file = "#{__dir__}/txt/#{name}.txt"
+def print_ref(name, directory)
+  file = "#{__dir__}/#{directory}/#{name}.txt"
   ref_data = open file
   ref_data.each { |line| print color(line) }
   ref_data.close
 end
 
+def print_user_supplement(name, user_dir)
+  if fetch_options(user_dir).include?(name)
+    puts color("\nUser Defined Keys")
+    print_ref(name, user_dir)
+  else
+  end
+end
+
 def system_out(passed_arg)
-  options = fetch_options
+  options = fetch_options("txt")
   if options.include?(passed_arg)
-    print_ref(passed_arg)
+    print_ref(passed_arg, "txt")
+    print_user_supplement(passed_arg, "txt/user")
   else
     puts color("Usage: refy [shortcut list]\nPossible shortcut lists:")
     options.each { |option| puts ' ' * 4 + color(option) }

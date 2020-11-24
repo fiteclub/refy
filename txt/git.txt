@@ -48,4 +48,6 @@ ADD, COMMIT, PUSH before you go!
 Undo / Revert to last commit !LOSE ALL CHANGES!
   'git reset HEAD --hard'
   'git clean -fd'
-  
+
+Reset to a previous commit
+  'git reset <SHA of commit>'
