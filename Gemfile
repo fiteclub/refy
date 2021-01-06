@@ -6,5 +6,7 @@ gem 'tty-table'
 gem 'rainbow'
 
 group :development do
-  gem 'pry'
+  gem 'pry-rails'
+  gem 'amazing_print'
+  gem 'jazz_fingers'
 end
