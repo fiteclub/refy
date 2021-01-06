@@ -3,8 +3,8 @@ Quick reference key shortcuts from command line.
 
 ### What does it do?
 - Prints .txt files to the console. 
-- Any file with extension .txt in the /txt subfolder can be called with ```refy <filename>```
-
+- Any file with extension .txt in the /txt subdirectory can be called with ```refy <filename>```
+- Append a reference .txt with your own custom keys or text by adding a file in the ```/txt/user``` subdirectory with an identical name. Example: ```/txt/your_keys.txt```, and ```/txt/user/your_keys.txt```
 ### Usage
 Add to your PATH in .bashrc or .zshrc :
 ```export PATH=$PWD:[ Path to refy ]:$PATH```

@@ -1,0 +1,71 @@
+Navigating the page
+<c-e> j      Scroll down
+<c-y> k      Scroll up
+h            Scroll left
+l            Scroll right
+gg           Scroll to the top of the page
+G            Scroll to the bottom of the page
+zH           Scroll all the way to the left
+zL           Scroll all the way to the right
+d            Scroll a page down
+u            Scroll a page up
+r            Reload current frame (use hard)
+<a-r>        Reload N tab(s) (use hard, bypassCache)
+R            Reload N-th tab (use hard)
+gs           View page source
+yy           Copy page's info (use type=url/title/frame, decoded)
+<s-f1> <f2>    Blur activeElement or refocus it (use flash, select=""/all/all-line/start/end)
+<f1>         Simulate backspace once if focused
+yf           Copy a link URL to the clipboard
+p            Open the clipboard's URL in the current tab
+P            Open the clipboard's URL in N new tab(s)
+gu           Go up the URL hierarchy (use trailingSlash=null/true/false)
+gU           Go to root of current URL hierarchy
+gi           Focus the N-th visible text box on the page and cycle using tab (use keep, select=""/all/all-line/start/end)
+f            Open a link in the current tab (use button=""/right, touch=false/true/"auto")
+F            Open a link in a new tab
+<a-f>        Open multiple links in a new tab
+[[           Follow the link labeled previous or "<"
+]]           Follow the link labeled next or ">"
+gf           Cycle forward to the next frame on the page
+gF           Select the tab's main/top frame
+i            Enter insert mode (use key:string, unhover, reset)
+<f8> v       Enter visual mode
+V            Enter visual line mode
+m            Create a new mark (use swap)
+`            Go to a mark (use prefix=true, swap, mapKey)
+Using the Vomnibar
+o            Open URL, bookmark, or history entry (use keyword="", url:boolean/string)
+O            Open URL, history, ... in a new tab (use keyword, url)
+b            Open a bookmark
+B            Open a bookmark in a new tab
+T            Search through your open tabs
+ge           Edit the current URL
+gE           Edit the current URL and open in a new tab
+gn           Toggle styles of vomnibar page (use style=dark, current)
+Using find
+/            Enter find mode (use last, selected=true)
+n            Cycle forward to the next find match
+N            Cycle backward to the previous find match
+<a-n>        Find the second or even earlier query words
+Navigating history
+H            Go back in history (use reuse=current/newBg/newFg)
+L            Go forward in history
+<a-R>        Reopen current page
+Manipulating tabs
+<a-s-c> <a-v> K gt    Go one tab right
+<a-c> J gT            Go one tab left
+g0           Go to the first N-th tab
+g$           Go to the last N-th tab
+<a-t> t      Create new tab(s)
+gd           Duplicate current tab for N times
+x            Close N tab(s) (use keepWindow=""/always, mayClose, goto=""/left/right/previous)
+X            Restore closed tab(s)
+W            Move tab to next window (use right)
+gp           Pin or unpin N tab(s)
+<a-m>        Mute or unmute current tab (use all, other)
+^            Go to previously-visited tab on current window
+<<           Move tab to the left
+>>           Move tab to the right
+Miscellaneous
+?            Show help
