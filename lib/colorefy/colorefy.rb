@@ -40,29 +40,41 @@ end
 def columnize(str_array, num_columns)
   column_length = str_array.length/num_columns.to_i
   new_array = []
-  puts "num_columns: #{num_columns}, column_length: #{column_length}"
-  (0..(column_length - 1)).each do |line|
-    column_array = []
-    puts "line #{line}"
-    (0..(num_columns - 1)).each do |column|
-      puts "column #{column}"
-      if str_array[column + column_length]
-        # puts str_array[line * column]
-        column_array << str_array[line + (column * column_length)][0]
-        column_array << str_array[line + (column * column_length)][1]
-      else
-        column_array << ''
-        column_array << ''
+  if num_columns > 1
+    puts "num_columns: #{num_columns}, column_length: #{column_length}"
+    (0..(column_length - 1)).each do |line|
+      column_array = []
+      puts "line #{line}"
+      (0..(num_columns - 1)).each do |column|
+        puts "column #{column}"
+        if str_array[column + column_length]
+          # puts str_array[line * column]
+          column_array << str_array[line + (column * column_length)][0]
+          column_array << str_array[line + (column * column_length)][1]
+        else
+          column_array << ''
+          column_array << ''
+        end
       end
+      new_array << column_array
     end
-    new_array << column_array
+  else
+    new_array = str_array
   end
   new_array
 end
 
+def supportable_columns(str_array)
+  lengths = []
+  str_array.each do |string|
+    lengths << string.join().length
+  end
+  puts lengths.max
+  IO.console.winsize[1] / lengths.max
+end
+
 keys = build_array(raw_string_array)
-max_columns = (IO.console.winsize[1] / (keys.max_by(&:length).join().length + 15)).to_i
-colkeys = columnize(keys, max_columns)
+colkeys = columnize(keys, supportable_columns(keys))
 
 binding.pry
 puts build_table(colkeys)
