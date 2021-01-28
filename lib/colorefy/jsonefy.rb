@@ -2,14 +2,14 @@
 require 'pry'
 require 'json'
 require_relative 'colorefy'
+# colorefy is required for divide_string method
 
 input_data = File.read('TEST.txt')
-delimeter = "  "
 
-def write_to_json(raw_input, delimeter, create_filename)
+def write_to_json(raw_input, create_filename)
   input_hash = raw_input.split("\n").map do |line|
-    string = line.split("#{delimeter}")
-    {keys: string[0], action: string[1]}
+    line_array = divide_string(line)
+    {keys: line_array[0], action: line_array[1]}
   end
   File.open("#{create_filename}", "w") do |f| 
     f.write(JSON.pretty_generate(input_hash))
@@ -32,7 +32,7 @@ end
 #   new_table
 # end
 
-write_to_json(input_data, delimeter, "TEST.json")
+write_to_json(input_data, "TEST.json")
 
 data = JSON.parse(File.read('TEST.json'))
 binding.pry

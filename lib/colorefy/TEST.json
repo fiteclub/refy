@@ -9,83 +9,83 @@
   },
   {
     "keys": "gg",
-    "action": ""
+    "action": "Scroll to the top of the page"
   },
   {
     "keys": "G",
-    "action": ""
+    "action": "Scroll to the bottom of the page"
   },
   {
     "keys": "d",
-    "action": ""
+    "action": "Scroll a half page down"
   },
   {
     "keys": "u",
-    "action": ""
+    "action": "Scroll a half page up"
   },
   {
     "keys": "h",
-    "action": ""
+    "action": "Scroll left"
   },
   {
     "keys": "l",
-    "action": ""
+    "action": "Scroll right"
   },
   {
     "keys": "zH",
-    "action": ""
+    "action": "Scroll all the way to the left"
   },
   {
     "keys": "zL",
-    "action": ""
+    "action": "Scroll all the way to the right"
   },
   {
     "keys": "r",
-    "action": ""
+    "action": "Reload the page"
   },
   {
     "keys": "yy",
-    "action": ""
+    "action": "Copy the current URL to the clipboard"
   },
   {
     "keys": "p",
-    "action": ""
+    "action": "Open the clipboard's URL in the current tab"
   },
   {
     "keys": "P",
-    "action": ""
+    "action": "Open the clipboard's URL in a new tab"
   },
   {
     "keys": "gu",
-    "action": ""
+    "action": "Go up the URL hierarchy"
   },
   {
     "keys": "gU",
-    "action": ""
+    "action": "Go to root of current URL hierarchy"
   },
   {
     "keys": "i",
-    "action": ""
+    "action": "Enter insert mode"
   },
   {
     "keys": "v",
-    "action": ""
+    "action": "Enter visual mode"
   },
   {
     "keys": "V",
-    "action": ""
+    "action": "Enter visual line mode"
   },
   {
     "keys": "gi",
-    "action": ""
+    "action": "Focus the first text input on the page"
   },
   {
     "keys": "f",
-    "action": ""
+    "action": "Open a link in the current tab"
   },
   {
     "keys": "F",
-    "action": ""
+    "action": "Open a link in a new tab"
   },
   {
     "keys": "<a-f>",
@@ -93,83 +93,83 @@
   },
   {
     "keys": "yf",
-    "action": ""
+    "action": "Copy a link URL to the clipboard"
   },
   {
     "keys": "[[",
-    "action": ""
+    "action": "Follow the link labeled previous or <"
   },
   {
     "keys": "]]",
-    "action": ""
+    "action": "Follow the link labeled next or >"
   },
   {
     "keys": "gf",
-    "action": ""
+    "action": "Select the next frame on the page"
   },
   {
     "keys": "gF",
-    "action": ""
+    "action": "Select the page's main/top frame"
   },
   {
     "keys": "m",
-    "action": ""
+    "action": "Create a new mark"
   },
   {
     "keys": "`",
-    "action": ""
+    "action": "Go to a mark"
   },
   {
     "keys": "o",
-    "action": ""
+    "action": "Open URL, bookmark or history entry"
   },
   {
     "keys": "O",
-    "action": ""
+    "action": "Open URL, bookmark or history entry in a new tab"
   },
   {
     "keys": "b",
-    "action": ""
+    "action": "Open a bookmark"
   },
   {
     "keys": "B",
-    "action": ""
+    "action": "Open a bookmark in a new tab"
   },
   {
     "keys": "T",
-    "action": ""
+    "action": "Search through your open tabs"
   },
   {
     "keys": "ge",
-    "action": ""
+    "action": "Edit the current URL"
   },
   {
     "keys": "gE",
-    "action": ""
+    "action": "Edit the current URL and open in a new tab"
   },
   {
     "keys": "/",
-    "action": ""
+    "action": "Enter find mode"
   },
   {
     "keys": "n",
-    "action": ""
+    "action": "Cycle forward to the next find match"
   },
   {
     "keys": "N",
-    "action": ""
+    "action": "Cycle backward to the previous find match"
   },
   {
     "keys": "H",
-    "action": ""
+    "action": "Go back in history"
   },
   {
     "keys": "L",
-    "action": ""
+    "action": "Go forward in history"
   },
   {
     "keys": "t",
-    "action": ""
+    "action": "Create new tab"
   },
   {
     "keys": "J, gT",
@@ -181,19 +181,19 @@
   },
   {
     "keys": "^",
-    "action": ""
+    "action": "Go to previously-visited tab"
   },
   {
     "keys": "g0",
-    "action": ""
+    "action": "Go to the first tab"
   },
   {
     "keys": "g$",
-    "action": ""
+    "action": "Go to the last tab"
   },
   {
     "keys": "yt",
-    "action": ""
+    "action": "Duplicate current tab"
   },
   {
     "keys": "<a-p>",
@@ -205,30 +205,30 @@
   },
   {
     "keys": "x",
-    "action": ""
+    "action": "Close current tab"
   },
   {
     "keys": "X",
-    "action": ""
+    "action": "Restore closed tab"
   },
   {
     "keys": "W",
-    "action": ""
+    "action": "Move tab to new window"
   },
   {
     "keys": "<<",
-    "action": ""
+    "action": "Move tab to the left"
   },
   {
     "keys": ">>",
-    "action": ""
+    "action": "Move tab to the right"
   },
   {
     "keys": "?",
-    "action": ""
+    "action": "Show help"
   },
   {
     "keys": "gs",
-    "action": ""
+    "action": "View page source"
   }
 ]

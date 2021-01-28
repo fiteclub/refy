@@ -19,6 +19,20 @@ def build_array(str_array)
   new_table
 end
 
+# Hash does not work for display array
+def build_hash(str_array)
+  str_array.split("\n").map do |line|
+    line_array = divide_string(line)
+    {keys: line_array[0], action: line_array[1]}
+  end
+end
+
+def colorize_hash(keys_action_hash)
+  keys_action_hash.map do |element|
+    { keys: color_keys(element[:keys]), action: color_description(element[:action]) }
+  end
+end
+
 # Depends on text with format of <keys>_(>=2 spaces)_<description>
 # Anything after the first 2+ spaces is the description
 def divide_string(string)
@@ -37,6 +51,7 @@ def color_description(string)
   Rainbow(string).green
 end
 
+# Refactor this using .map
 def columnize(str_array, num_columns)
   column_length = (str_array.length.to_f/num_columns)
   new_array = []
