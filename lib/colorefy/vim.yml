@@ -1,0 +1,173 @@
+# Note: Prefix a command with a number to repeat it.
+# For example, 4j moves down 4 lines.
+General:
+- action: Leader key.
+  keys: ['\']
+
+Cursor movement:
+- action: Move left.
+  keys: [h]
+- action: Move down.
+  keys: [j]
+- action: Move up.
+  keys: [k]
+- action: Move right.
+  keys: [l]
+- action: Jump by start of words (punctuation considered words).
+  keys: [w]
+- action: Jump by words (spaces separate words).
+  keys: [W]
+- action: Jump to end of words (punctuation considered words).
+  keys: [e]
+- action: Jump to end of words (no punctuation).
+  keys: [E]
+- action: Jump backward by words (punctuation considered words).
+  keys: [b]
+- action: Jump backward by words (no punctuation).
+  keys: [B]
+- action: Start of line.
+  keys: ['0']
+- action: First non-blank character of line.
+  keys: [^]
+- action: End of line.
+  keys: [$]
+- action: Go To command (prefix with number).
+  keys: [G]
+
+Inserting/Appending text:
+- action: Start insert mode at cursor.
+  keys: [i]
+- action: Insert at the beginning of the line.
+  keys: [I]
+- action: Append after the cursor.
+  keys: [a]
+- action: Append at the end of the line.
+  keys: [A]
+- action: Append blank line below current line (no need to press return).
+  keys: [o]
+- action: open blank line above current line.
+  keys: [O]
+- action: Append at end of word.
+  keys: [ea]
+- action: Exit insert mode.
+  keys: [Esc]
+
+Editing:
+- action: Replace a single character (does not use insert mode).
+  keys: [r]
+- action: Join line below to the current one.
+  keys: [J]
+- action: Change (replace) an entire line.
+  keys: [cc]
+- action: Change (replace) to the end of word.
+  keys: [cw]
+- action: Change (replace) to the end of line.
+  keys: [c$]
+- action: Delete character at cursor and subsitute text.
+  keys: [s]
+- action: Delete line at cursor and substitute text (same as cc).
+  keys: [S]
+- action: Transpose two letters (delete and paste, technically).
+  keys: [xp]
+- action: Undo.
+  keys: [u]
+- action: Repeat last command.
+  keys: ['.']
+
+Marking text (visual mode):
+- action: Start visual mode, mark lines, then do command (such as y-yank).
+  keys: [v]
+- action: Start Linewise visual mode.
+  keys: [V]
+- action: Move to other end of marked area.
+  keys: [o]
+- action: Start visual block mode.
+  keys: [Ctrl-v]
+- action: Move to Other corner of block.
+  keys: [O]
+- action: Mark a word.
+  keys: [aw]
+- action: A () block (with braces).
+  keys: [ab]
+- action: A {} block (with brackets).
+  keys: [aB]
+- action: Inner () block.
+  keys: [ib]
+- action: Inner {} block.
+  keys: [iB]
+- action: Exit visual mode.
+  keys: [Esc]
+
+Visual commands:
+- action: Shift right.
+  keys: ['>']
+- action: Shift left.
+  keys: [<]
+- action: Yank (copy) marked text.
+  keys: [y]
+- action: Delete marked text.
+  keys: [d]
+- action: Switch case.
+  keys: ['~']
+
+Cut and Paste:
+- action: Yank (copy) a line.
+  keys: [yy]
+- action: Yank word.
+  keys: [yw]
+- action: Yank to end of line.
+  keys: [y$]
+- action: Put (paste) the clipboard after cursor.
+  keys: [p]
+- action: Put (paste) before cursor.
+  keys: [P]
+- action: Delete (cut) a line.
+  keys: [dd]
+- action: Delete (cut) the current word.
+  keys: [dw]
+- action: Delete (cut) current character.
+  keys: [x]
+
+Exiting:
+- action: "Write (save) the file, but don't exit."
+  keys: [':w']
+- action: Write (save) and quit.
+  keys: [':wq']
+- action: Quit (fails if anything has changed).
+  keys: [':q']
+- action: Quit and throw away changes.
+  keys: [':q!']
+
+Search/Replace:
+- action: Search for pattern.
+  keys: [/pattern]
+- action: Search backward for pattern.
+  keys: ['?pattern']
+- action: Repeat search in same direction.
+  keys: [n]
+- action: Repeat search in opposite direction.
+  keys: [N]
+- action: Replace all old with new throughout file.
+  keys: [':%s/old/new/g']
+- action: Replace all old with new throughout file with confirmations.
+  keys: [':%s/old/new/gc']
+
+Working with multiple files:
+- action: Edit a file in a new buffer.
+  keys: [':e filename']
+- action: Go to next buffer.
+  keys: [':bnext', ':bn']
+- action: Go to previous buffer.
+  keys: [':bprev', ':bp']
+- action: Delete a buffer (close a file).
+  keys: [':bd']
+- action: Open a file in a new buffer and split window.
+  keys: [':sp filename']
+- action: Split windows.
+  keys: [Ctrl-ws]
+- action: Switch between windows.
+  keys: [Ctrl-ww, Ctrl-w w]
+- action: Quit a window.
+  keys: [Ctrl-wq]
+- action: Split windows vertically.
+  keys: [Ctrl-wv]

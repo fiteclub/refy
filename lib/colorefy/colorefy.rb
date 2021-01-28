@@ -38,7 +38,7 @@ def color_description(string)
 end
 
 def columnize(str_array, num_columns)
-  column_length = str_array.length/num_columns.to_i
+  column_length = (str_array.length.to_f/num_columns)
   new_array = []
   if num_columns > 1
     puts "num_columns: #{num_columns}, column_length: #{column_length}"
@@ -70,7 +70,7 @@ def supportable_columns(str_array)
     lengths << string.join().length
   end
   puts lengths.max
-  IO.console.winsize[1] / lengths.max
+  (IO.console.winsize[1] / lengths.max).ceil
 end
 
 keys = build_array(raw_string_array)
@@ -79,3 +79,4 @@ colkeys = columnize(keys, supportable_columns(keys))
 binding.pry
 puts build_table(colkeys)
 puts build_table(build_array(raw_string_array))
+

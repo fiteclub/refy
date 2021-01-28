@@ -1,0 +1,234 @@
+[
+  {
+    "keys": "j, <c-e>",
+    "action": "Scroll down"
+  },
+  {
+    "keys": "k, <c-y>",
+    "action": "Scroll up"
+  },
+  {
+    "keys": "gg",
+    "action": ""
+  },
+  {
+    "keys": "G",
+    "action": ""
+  },
+  {
+    "keys": "d",
+    "action": ""
+  },
+  {
+    "keys": "u",
+    "action": ""
+  },
+  {
+    "keys": "h",
+    "action": ""
+  },
+  {
+    "keys": "l",
+    "action": ""
+  },
+  {
+    "keys": "zH",
+    "action": ""
+  },
+  {
+    "keys": "zL",
+    "action": ""
+  },
+  {
+    "keys": "r",
+    "action": ""
+  },
+  {
+    "keys": "yy",
+    "action": ""
+  },
+  {
+    "keys": "p",
+    "action": ""
+  },
+  {
+    "keys": "P",
+    "action": ""
+  },
+  {
+    "keys": "gu",
+    "action": ""
+  },
+  {
+    "keys": "gU",
+    "action": ""
+  },
+  {
+    "keys": "i",
+    "action": ""
+  },
+  {
+    "keys": "v",
+    "action": ""
+  },
+  {
+    "keys": "V",
+    "action": ""
+  },
+  {
+    "keys": "gi",
+    "action": ""
+  },
+  {
+    "keys": "f",
+    "action": ""
+  },
+  {
+    "keys": "F",
+    "action": ""
+  },
+  {
+    "keys": "<a-f>",
+    "action": "Open multiple links in a new tab"
+  },
+  {
+    "keys": "yf",
+    "action": ""
+  },
+  {
+    "keys": "[[",
+    "action": ""
+  },
+  {
+    "keys": "]]",
+    "action": ""
+  },
+  {
+    "keys": "gf",
+    "action": ""
+  },
+  {
+    "keys": "gF",
+    "action": ""
+  },
+  {
+    "keys": "m",
+    "action": ""
+  },
+  {
+    "keys": "`",
+    "action": ""
+  },
+  {
+    "keys": "o",
+    "action": ""
+  },
+  {
+    "keys": "O",
+    "action": ""
+  },
+  {
+    "keys": "b",
+    "action": ""
+  },
+  {
+    "keys": "B",
+    "action": ""
+  },
+  {
+    "keys": "T",
+    "action": ""
+  },
+  {
+    "keys": "ge",
+    "action": ""
+  },
+  {
+    "keys": "gE",
+    "action": ""
+  },
+  {
+    "keys": "/",
+    "action": ""
+  },
+  {
+    "keys": "n",
+    "action": ""
+  },
+  {
+    "keys": "N",
+    "action": ""
+  },
+  {
+    "keys": "H",
+    "action": ""
+  },
+  {
+    "keys": "L",
+    "action": ""
+  },
+  {
+    "keys": "t",
+    "action": ""
+  },
+  {
+    "keys": "J, gT",
+    "action": "Go one tab left"
+  },
+  {
+    "keys": "K, gt",
+    "action": "Go one tab right"
+  },
+  {
+    "keys": "^",
+    "action": ""
+  },
+  {
+    "keys": "g0",
+    "action": ""
+  },
+  {
+    "keys": "g$",
+    "action": ""
+  },
+  {
+    "keys": "yt",
+    "action": ""
+  },
+  {
+    "keys": "<a-p>",
+    "action": "Pin or unpin current tab"
+  },
+  {
+    "keys": "<a-m>",
+    "action": "Mute or unmute current tab"
+  },
+  {
+    "keys": "x",
+    "action": ""
+  },
+  {
+    "keys": "X",
+    "action": ""
+  },
+  {
+    "keys": "W",
+    "action": ""
+  },
+  {
+    "keys": "<<",
+    "action": ""
+  },
+  {
+    "keys": ">>",
+    "action": ""
+  },
+  {
+    "keys": "?",
+    "action": ""
+  },
+  {
+    "keys": "gs",
+    "action": ""
+  }
+]
