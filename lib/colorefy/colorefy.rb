@@ -51,26 +51,16 @@ def color_description(string)
   Rainbow(string).green
 end
 
-# Refactor this using .map
 def columnize(str_array, num_columns)
   str_array = make_even_columns(str_array, num_columns)
   column_length = (str_array.length.to_f/num_columns)
   new_array = []
   if num_columns > 1
-    puts "num_columns: #{num_columns}, column_length: #{column_length}"
     (0..(column_length - 1)).each do |line|
       column_array = []
-      puts "line #{line}"
       (0..(num_columns - 1)).each do |column|
-        puts "column #{column}"
-        if str_array[column + column_length]
-          # puts str_array[line * column]
-          column_array << str_array[line + (column * column_length)][0]
-          column_array << str_array[line + (column * column_length)][1]
-        else
-          column_array << ''
-          column_array << ''
-        end
+        column_array << str_array[line + (column * column_length)][0]
+        column_array << str_array[line + (column * column_length)][1]
       end
       new_array << column_array
     end
@@ -80,11 +70,12 @@ def columnize(str_array, num_columns)
   new_array
 end
 
-def make_even_columns(str_array, num_columns)
-  while str_array.length%num_columns != 0
-    str_array << ["", ""]
+# Yes it's a while loop. Behold my skill.
+def make_even_columns(array, num_columns)
+  while array.length%num_columns != 0
+    array << array[0].map { |item| "" }
   end
-  str_array
+  array
 end
 
 def supportable_columns(str_array)
@@ -92,7 +83,6 @@ def supportable_columns(str_array)
   str_array.each do |string|
     lengths << string.join().length
   end
-  puts lengths.max
   (IO.console.winsize[1] / lengths.max).ceil
 end
 
