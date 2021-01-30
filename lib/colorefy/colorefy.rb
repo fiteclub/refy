@@ -53,6 +53,7 @@ end
 
 # Refactor this using .map
 def columnize(str_array, num_columns)
+  str_array = make_even_columns(str_array, num_columns)
   column_length = (str_array.length.to_f/num_columns)
   new_array = []
   if num_columns > 1
@@ -79,6 +80,13 @@ def columnize(str_array, num_columns)
   new_array
 end
 
+def make_even_columns(str_array, num_columns)
+  while str_array.length%num_columns != 0
+    str_array << ["", ""]
+  end
+  str_array
+end
+
 def supportable_columns(str_array)
   lengths = []
   str_array.each do |string|
@@ -94,4 +102,3 @@ colkeys = columnize(keys, supportable_columns(keys))
 binding.pry
 puts build_table(colkeys)
 puts build_table(build_array(raw_string_array))
-

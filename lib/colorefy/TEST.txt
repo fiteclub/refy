@@ -56,3 +56,4 @@ W     Move tab to new window
 >>    Move tab to the right
 ?     Show help
 gs    View page source
+ESC  Arbitrary text for testing purposes
