@@ -27,10 +27,10 @@ def print_user_supplement(name, user_dir)
 end
 
 def system_out(passed_arg)
-  options = fetch_options("txt")
+  options = fetch_options('txt')
   if options.include?(passed_arg)
-    print_ref(passed_arg, "txt")
-    print_user_supplement(passed_arg, "txt/user")
+    print_ref(passed_arg, 'txt')
+    print_user_supplement(passed_arg, 'txt/user')
   else
     puts color("Usage: refy [shortcut list]\nPossible shortcut lists:")
     options.each { |option| puts ' ' * 4 + color(option) }
