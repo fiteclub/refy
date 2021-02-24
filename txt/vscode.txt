@@ -7,44 +7,44 @@ General
  ⌘K ⌘S   Keyboard Shortcuts
  
  Basic editing
- ⌘X      Cut line (empty selection)
- ⌘C      Copy line (empty selection)
- ⌥↑      Move line Up
- ⌥↓      Move line Down 
- ⇧⌥↑     Copy line Up
- ⇧⌥↓     Copy line Down
- ⇧⌘K     Delete line
- ⇧⌘Enter Insert line Above
- ⌘Enter  Insert line Below
- ⇧⌘\     Jump to matching bracket
- ⌘]      Indent line
- ⌘[      Outdent line
- Home    Go to Beginning of line
- End     Go to End of line
- ⌘↑      Go to Beginning of file
- ⌘↓      Go to End of file
- ⌃PgUp   Scroll line Up
- ⌃PgDn   Scroll line Down
- ⌘PgUp   Scroll page up
- ⌘PgDn   Scroll page down
- ⌥⌘[     Fold region
- ⌥⌘]     Unfold region
- ⌘K ⌘[   Fold all subregions
- ⌘k ⌘]   Unfold all subregions
- ⌘K ⌘0   Fold all regions
- ⌘K ⌘J   Unfold all regions
- ⌘K ⌘C   Add line comment
- ⌘K ⌘U   Remove line comment
- ⌘/      Toggle line comment
- ⇧⌥A     Toggle block comment
- ⌥Z      Toggle word wrap
+ ⌘X       Cut line (empty selection)
+ ⌘C       Copy line (empty selection)
+ ⌥↑       Move line Up
+ ⌥↓       Move line Down 
+ ⇧⌥↑      Copy line Up
+ ⇧⌥↓      Copy line Down
+ ⇧⌘K      Delete line
+ ⇧⌘Enter  Insert line Above
+ ⌘Enter   Insert line Below
+ ⇧⌘\      Jump to matching bracket
+ ⌘]       Indent line
+ ⌘[       Outdent line
+ Home     Go to Beginning of line
+ End      Go to End of line
+ ⌘↑       Go to Beginning of file
+ ⌘↓       Go to End of file
+ ⌃PgUp    Scroll line Up
+ ⌃PgDn    Scroll line Down
+ ⌘PgUp    Scroll page up
+ ⌘PgDn    Scroll page down
+ ⌥⌘[      Fold region
+ ⌥⌘]      Unfold region
+ ⌘K ⌘[    Fold all subregions
+ ⌘k ⌘]    Unfold all subregions
+ ⌘K ⌘0    Fold all regions
+ ⌘K ⌘J    Unfold all regions
+ ⌘K ⌘C    Add line comment
+ ⌘K ⌘U    Remove line comment
+ ⌘/       Toggle line comment
+ ⇧⌥A      Toggle block comment
+ ⌥Z       Toggle word wrap
 
 Integrated terminal
- ⌃`      Show integrated terminal
- ⌃⇧`     Create new terminal
- ⌘C      Copy selection
- ⌘↑ / ↓  Scroll up/down
- PgUp    Scroll page up
- PgDn    Scroll page down
- ⌘Home   Scroll to top
- End     Scroll to bottom
+ ⌃`       Show integrated terminal
+ ⌃⇧`      Create new terminal
+ ⌘C       Copy selection
+ ⌘↑ / ↓   Scroll up/down
+ PgUp     Scroll page up
+ PgDn     Scroll page down
+ ⌘Home    Scroll to top
+ End      Scroll to bottom

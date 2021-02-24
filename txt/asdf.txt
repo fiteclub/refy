@@ -1,0 +1,28 @@
+File format example:
+# .tool-versions
+ruby 2.7.0
+node 12.8
+elixir 1.4.0
+
+Install from .tool-versions
+asdf install                            Install all the package versions listed
+                                          in the .tool-versions file
+asdf install <name>                     Install one tool at the version
+                                          specified in the .tool-versions file
+
+List
+asdf list <name>                        List installed versions of a package
+asdf list all <name> [<version>]        List all versions of a package and
+                                          optionally filter the returned versions
+asdf help <name> [<version>]            Output documentation for plugin and tool
+
+Install
+asdf install <name> <version>           Install a specific version of a package
+asdf install <name> latest              Install latest stable version
+asdf uninstall <name> <version>         Remove a specific version of a package
+
+asdf local <name> <version>             Set the package local version
+asdf global <name> <version>            Set the package global version
+
+asdf info                               Print OS, Shell and ASDF debug information.
+asdf reshim <name> <version>            Recreate shims for version of a package

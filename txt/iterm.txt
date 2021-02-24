@@ -1,0 +1,5 @@
+iterm2
+⌘Number       Select tab
+⌃Number       Select split pane
+⌘↑            Scroll one line up
+⌘↓            Scroll one line down
