@@ -1,3 +1,5 @@
+![refy](http://github.com/fiteclub/refy/blob/master/refy.png?raw=true)
+
 ## refy
 Quick reference key shortcuts from command line.
 
