@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 require 'pry'
 require 'json'
-require_relative 'colorefy'
+# require_relative 'colorefy'
 # colorefy is required for divide_string method
 
 input_data = File.read('TEST.txt')
@@ -14,6 +14,10 @@ def write_to_json(raw_input, create_filename)
   File.open("#{create_filename}", "w") do |f| 
     f.write(JSON.pretty_generate(input_hash))
   end
+end
+
+def divide_string(string)
+  string.split(/(  +)/).map(&:strip).reject(&:empty?)
 end
 
 def load_json_to_hash(json_filename)

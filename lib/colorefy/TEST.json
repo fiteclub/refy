@@ -230,5 +230,9 @@
   {
     "keys": "gs",
     "action": "View page source"
+  },
+  {
+    "keys": "ESC",
+    "action": "Arbitrary text for testing purposes"
   }
 ]
