@@ -23,6 +23,12 @@ Update your fork
   'git fetch upstream'
   'git merge'
 
+Merging with a local branch
+  'git merge <branch-name>'
+  fix conflicts
+  'git commit -a'
+
+
 Stashing https://git-scm.com/docs/git-stash
   Stash & revert        'git stash'
   List stashes          'git stash list'
@@ -51,3 +57,4 @@ Undo / Revert to last commit !LOSE ALL CHANGES!
 
 Reset to a previous commit
   'git reset <SHA of commit>'
+
