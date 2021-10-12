@@ -1,0 +1,2 @@
+Verifying SHA-256 checksum with shasum
+  'shasum -a 256 /full/path/to/your/file'
