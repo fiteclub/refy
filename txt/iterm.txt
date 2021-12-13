@@ -1,5 +1,14 @@
 iterm2
 ⌘Number       Select tab
 ⌃Number       Select split pane
+⌃⌘Number      Select window
 ⌘↑            Scroll one line up
 ⌘↓            Scroll one line down
+
+⌘⇧D           Split Horizontally with current profile
+⌘D            Split Vertically with current profile
+
+⌥⌘↑           Select pane above
+⌥⌘↓           Select pane below
+⌥⌘←           Select pane left
+⌥⌘→           Select pane right
